@@ -90,6 +90,14 @@
 
 @media screen and (max-width: 534px) {
     .products__container{
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+    .products__cards{
+        width: auto;
+        height: auto;
+        margin: 0;
+        position: relative;
     }
 }

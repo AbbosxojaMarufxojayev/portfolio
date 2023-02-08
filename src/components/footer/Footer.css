@@ -59,3 +59,10 @@
     margin: auto;
     margin-top: 5px;
 }
+
+@media screen and (max-width: 550px) {
+    .footer__top{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

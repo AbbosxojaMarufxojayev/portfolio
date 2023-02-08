@@ -1,0 +1,69 @@
+.single_route{
+    word-wrap: 100%;
+    height: 600px;
+    display: flex;
+    margin-bottom: 40px;
+}
+.first__part__single_route{
+    width: 50%;
+    height: 100%;
+}
+.second__part__single_route{
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+.top__part{
+    width: 100%;
+    height: 80%;
+    padding: 100px;
+}
+.top__part img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bottom__part{
+    width: 100%;
+    height: 20%;
+}
+.bottom__container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    margin-left: 70px;
+}
+.bottom__card{
+    width: 80px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.bottom__card img{
+    border-radius: 10px;
+}
+.bottom__card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.name__pro{
+    font-size: 40px;
+}
+.inform{
+    margin-top: 20px;
+}
+.back__to__home{
+    padding: 10px 15px;
+    background: dodgerblue;
+    border-radius: 10px;
+    transition: .3s;
+    border: none;
+    color: #fff;
+}
+.back__to__home:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

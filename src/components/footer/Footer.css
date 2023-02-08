@@ -1,0 +1,61 @@
+.footer{
+    width: 100%;
+    background: var(--bg-light);
+}
+.footer__top{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+.first__part1{
+    width: 50%;
+    height: 100%;
+    background: var(--bg-light);
+    padding: 20px 70px;
+}
+.second__part1{
+    width: 50%;
+    height: 100%;
+    background: url("../../assets/footerRasmlar/footerImg.webp") no-repeat center/contain;
+    padding: 0 30px;
+}
+.icons__container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.play__market1,
+.play__market2,
+.play__market3{
+    width: 180px;
+    height: 50px;
+    border-radius: 7px;
+    margin: 10px;
+    background: #fff;
+}
+.play__market1 img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+.play__market2 img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+.play__market3 img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}

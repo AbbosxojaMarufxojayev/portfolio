@@ -3,6 +3,7 @@ import "./Footer.css"
 import appStore from "../../assets/footerRasmlar/appStore.svg"
 import google from "../../assets/footerRasmlar/google.svg"
 import appGallery from "../../assets/footerRasmlar/appGallery.svg"
+import footerImg from "../../assets/footerRasmlar/footerImg.webp"
 
 function Footer() {
   return (
@@ -18,7 +19,7 @@ function Footer() {
                       <div className='play__market3'><img src={appGallery} alt="" /></div>
                     </div>
                   </div>
-                  <div className="second__part1"></div>
+                  <div className="second__part1"><img src={footerImg} alt="" /></div>
                 </div>
                 <hr className="line" />
                 <div className="footer__middle"></div>

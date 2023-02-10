@@ -120,13 +120,16 @@
     border-radius: 10px 0 0 10px;
 }
 .sec__input input{
-    width: 230px;
+    width: 100%;
     height: 45px;
     font-size: 18px;
     border-radius: 0 10px 10px 0;
 }
 .tasdiqlash{
-    padding: 15px 113px;
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 50px;
     border-radius: 10px;
     font-size: 17px;
     margin-top: 40px;

@@ -1,11 +1,25 @@
 import React from 'react'
 import "./SingleRoute.css"
 import { PRODUCTS__DATA } from "../../static"
+import { useDispatch, useSelector } from "react-redux"
+import { ADD_TO_LIKE, REMOVE_LIKE } from "../../context/action/actionType"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import { BsHeart } from "react-icons/bs"
 
 function SingleRoute() {
+    const dispatch = useDispatch()
+    const likes = useSelector(s=>s.heart)
+
+    const addHeart = (item)=>{
+        let index = likes.findIndex(i=> i.id === item.id)
+        if(index > -1){
+          return
+        }
+    
+        dispatch({type: ADD_TO_LIKE, payload: item})
+      }
+
     const params = useParams()
     const oneItem = PRODUCTS__DATA?.find(el => el.id === params.id)
   return (
@@ -33,7 +47,7 @@ function SingleRoute() {
             <p className="price__single">{oneItem?.price} so'm</p>
             <div className="buttons">
                 <button className="buy">Sotib olish</button>
-                <button className="liked">Sevimlilar <BsHeart/></button>
+                <button onClick={()=> addHeart(oneItem)} className="liked">Sevimlilar <BsHeart/></button>
                 <button className="to__cart">Savatchaga qo'shish</button>
             </div>
             <p className="dostavka">Yetkazib berish xizmati bepul!</p>

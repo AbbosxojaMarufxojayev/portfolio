@@ -2,12 +2,14 @@ import React from 'react'
 import "./Like.css"
 import Empty from "../../components/empty/Empty"
 import img from "../../assets/parashut.png"
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import  {REMOVE_LIKE} from "../../context/action/actionType"
 
 
 function Like() {
   const like = useSelector(s=> s.heart)
-  console.log(like)
+  const dispatch = useDispatch()
+
   return (
     <div className='container like'>
       {
@@ -29,7 +31,7 @@ function Like() {
         <button></button>
       <div className='like__btn'>
         <button className='like__btn2'>Savatchaga qo'shish</button>
-        <button className='like__btn3'>O'chirish</button>
+        <button onClick={()=> dispatch({type: REMOVE_LIKE, payload: item.id})} className='like__btn3'>O'chirish</button>
       </div>
       </div>)
       }

@@ -12,7 +12,7 @@ function SubHeader() {
             <span>Sayt xaritasi</span>
           </div>
           <div>
-            <a href="tel:+998913430668">+998 97 104 4161</a>
+            <a href="tel:+998971044161">+998 97 104 4161</a>
             <button className='btn'>Olchada sotib olish</button>
           </div>
         </div>
